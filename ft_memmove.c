@@ -6,7 +6,7 @@
 /*   By: mousaidi <mousaidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 18:58:45 by mousaidi          #+#    #+#             */
-/*   Updated: 2026/11/01 21:30:39 by mousaidi         ###   ########.fr       */
+/*   Updated: 2026/11/03 13:30:24 by mousaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 			len--;
 			d[len] = s[len];
 		}
-
 	}
 	else
 	{
@@ -38,7 +37,7 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 			d++;
 			s++;
 			len--;
-		}	
+		}
 	}
 	return (dest);
 }

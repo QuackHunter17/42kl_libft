@@ -6,7 +6,7 @@
 /*   By: mousaidi <mousaidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 15:50:48 by mousaidi          #+#    #+#             */
-/*   Updated: 2026/11/02 16:03:27 by mousaidi         ###   ########.fr       */
+/*   Updated: 2026/11/03 13:31:40 by mousaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*ptr;
 
 	i = 0;

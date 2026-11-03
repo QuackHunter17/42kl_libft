@@ -6,7 +6,7 @@
 /*   By: mousaidi <mousaidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 11:59:20 by mousaidi          #+#    #+#             */
-/*   Updated: 2026/11/03 13:06:27 by mousaidi         ###   ########.fr       */
+/*   Updated: 2026/11/03 13:30:00 by mousaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-
 	if (start >= ft_strlen(s))
 	{
 		return (mem_alloc(s, start, 0));

@@ -6,14 +6,15 @@
 /*   By: mousaidi <mousaidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 12:31:33 by mousaidi          #+#    #+#             */
-/*   Updated: 2026/11/02 12:41:44 by mousaidi         ###   ########.fr       */
+/*   Updated: 2026/11/03 13:31:04 by mousaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*ptr1;
 	unsigned char	*ptr2;
 

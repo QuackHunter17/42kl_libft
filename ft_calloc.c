@@ -6,7 +6,7 @@
 /*   By: mousaidi <mousaidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:44:45 by mousaidi          #+#    #+#             */
-/*   Updated: 2026/11/02 18:56:19 by mousaidi         ###   ########.fr       */
+/*   Updated: 2026/11/03 13:32:13 by mousaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	void	*ptr;
+	void			*ptr;
 	unsigned char	*byte_ptr;
-	size_t	i;
+	size_t			i;
 
 	if (size != 0 && nmemb > ((size_t) - 1) / size)
 		return (NULL);

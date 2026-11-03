@@ -6,22 +6,22 @@
 /*   By: mousaidi <mousaidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:10:23 by mousaidi          #+#    #+#             */
-/*   Updated: 2026/11/02 17:24:15 by mousaidi         ###   ########.fr       */
+/*   Updated: 2026/11/03 13:32:41 by mousaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	is_neg;
+	int		i;
+	int		is_neg;
 	long	num;
 
 	i = 0;
 	is_neg = 1;
 	num = 0;
 	while (nptr[i] == ' ' || nptr[i] == '\f' || nptr[i] == '\n'
-			|| nptr[i] == '\r' || nptr[i] == '\t'
-			|| nptr[i] == '\v')
+		|| nptr[i] == '\r' || nptr[i] == '\t'
+		|| nptr[i] == '\v')
 		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
