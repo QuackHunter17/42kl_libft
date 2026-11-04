@@ -6,7 +6,7 @@
 /*   By: mousaidi <mousaidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 22:11:51 by mousaidi          #+#    #+#             */
-/*   Updated: 2026/11/04 10:24:46 by mousaidi         ###   ########.fr       */
+/*   Updated: 2026/11/04 23:00:25 by mousaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static size_t	ft_strlen(const char *s)
 {
 	size_t	i;
-	
+
 	i = 0;
 	while (s[i] != '\0')
 		i++;
@@ -36,7 +36,7 @@ static size_t	start(char const *s, char const *set)
 		while (set[j] != '\0')
 		{
 			if (s[i] == set[j])
-				break;
+				break ;
 			j++;
 		}
 		if (j == set_len)
@@ -63,7 +63,7 @@ static size_t	end(char const *s, char const *set)
 		while (set[j] != '\0')
 		{
 			if (s[i] == set[j])
-				break;
+				break ;
 			j++;
 		}
 		if (j == set_len)
@@ -88,7 +88,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 			*res = '\0';
 		return (res);
 	}
-	res = malloc(sizeof(char) * (indexs[1] - indexs[0] + 2);
+	res = malloc(sizeof(char) * (indexs[1] - indexs[0] + 2));
 	if (!res)
 		return (NULL);
 	i = 0;

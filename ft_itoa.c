@@ -6,13 +6,13 @@
 /*   By: mousaidi <mousaidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 21:48:53 by mousaidi          #+#    #+#             */
-/*   Updated: 2026/11/04 22:16:41 by mousaidi         ###   ########.fr       */
+/*   Updated: 2026/11/04 23:03:40 by mousaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-static char	*ret_zero()
+static char	*ret_zero(void)
 {
 	char	*res;
 
@@ -26,14 +26,14 @@ static char	*ret_zero()
 
 static int	calc_len(int n)
 {
-	int	len;
+	int		len;
 	long	num;
 
 	len = 0;
 	num = n;
 	if (n < 0)
 	{
-		num = - n;
+		num = -n;
 		len++;
 	}
 	while (num > 0)
@@ -46,7 +46,7 @@ static int	calc_len(int n)
 
 char	*ft_itoa(int n)
 {
-	int	len;
+	int		len;
 	long	num;
 	char	*res;
 
@@ -54,7 +54,7 @@ char	*ft_itoa(int n)
 	if (n == 0)
 		return (ret_zero());
 	if (n < 0)
-		num = - n;
+		num = -n;
 	len = calc_len(n);
 	res = malloc(sizeof(char) * (len + 1));
 	if (!res)
