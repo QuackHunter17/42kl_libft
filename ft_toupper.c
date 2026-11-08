@@ -6,13 +6,13 @@
 /*   By: mousaidi <mousaidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 08:13:45 by mousaidi          #+#    #+#             */
-/*   Updated: 2026/11/02 08:15:17 by mousaidi         ###   ########.fr       */
+/*   Updated: 2026/11/06 00:04:37 by mousaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_toupper(int c)
 {
-	if (c >= 97 || c <= 122)
+	if (c >= 97 && c <= 122)
 		return (c - 32);
 	return (c);
 }

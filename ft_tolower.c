@@ -6,13 +6,13 @@
 /*   By: mousaidi <mousaidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 08:15:47 by mousaidi          #+#    #+#             */
-/*   Updated: 2026/11/02 08:17:01 by mousaidi         ###   ########.fr       */
+/*   Updated: 2026/11/06 00:04:49 by mousaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
-	if (c >= 65 || c <= 90)
+	if (c >= 65 && c <= 90)
 		return (c + 32);
 	return (c);
 }

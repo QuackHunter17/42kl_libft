@@ -6,7 +6,7 @@
 /*   By: mousaidi <mousaidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 21:48:53 by mousaidi          #+#    #+#             */
-/*   Updated: 2026/11/04 23:03:40 by mousaidi         ###   ########.fr       */
+/*   Updated: 2026/11/08 17:49:15 by mousaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static int	calc_len(int n)
 	num = n;
 	if (n < 0)
 	{
-		num = -n;
+		num = - (long) n;
 		len++;
 	}
 	while (num > 0)
@@ -54,7 +54,7 @@ char	*ft_itoa(int n)
 	if (n == 0)
 		return (ret_zero());
 	if (n < 0)
-		num = -n;
+		num = - (long) n;
 	len = calc_len(n);
 	res = malloc(sizeof(char) * (len + 1));
 	if (!res)
